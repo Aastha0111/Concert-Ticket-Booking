@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242333;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seat{
+    background-color: #444451;
+    height: 12px;
+    width: 15px;
+    margin: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.title1{
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    font: bold 35px 'Spartan';
+    color: white;
+} 
+
+.row3{
+    display: flex;
+}
+
+.concert-container select{
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.seat.selected{
+    background-color: aqua;
+}
+.seat.occupied{
+    background-color: white;
+}
+.seat:nth-of-type(3){
+    margin-right: 18px;
+}
+.seat:nth-last-of-type(3){
+    margin-left: 18px;
+}
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.showcase .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+}
+
+.showcase{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15px;
+}
+
+.showcase li small{
+    margin-left: 10px;
+}
+
+.screen{
+    background-color: white;
+    height: 110px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+}
+
+.container{
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+p.text{
+    margin: 25px 0;
+    font-size: 20px;
+}
+p.text span{
+    color: aqua;
+}
+
+.logout{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.logout-btn{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    width: 80%;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px;
+    background: #F3C693;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    
+    margin-top: 10px;
+    text-decoration: none;
+    
+}
+
+.logout-btn:hover{
+    box-shadow: 0 0 20px 9px #F3C693;
+}

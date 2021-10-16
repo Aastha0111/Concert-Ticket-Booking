@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+
+
+    
+</head>
+<body onload="init()">
+    <!-- Header section starts -->
+    <header class="header">
+        
+        <a href="#" class="logo">
+            <img src="Asset/529557.jpg" alt="Logo">
+        </a>
+        <h3 class="title">BTS CONCERT</h3>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Concert</a>
+            <a href="#register">Sign Up</a>
+            <a href="#login">Login</a>
+        </nav>
+
+        </header>
+
+        <!-- Home section starts -->
+        <section class="home" id="home">
+            <div class="content">
+                <h4>BTS <br><br>
+                    Love Yourself Concert Night <br>
+                    <br>
+                    "We will fill your universe with our own galaxy"
+                    </h4>
+            </div>
+        </section>
+
+        <!-- About section starts -->
+        <section class="about" id="about">
+            <h1 class="heading"> <span>About</span> Concert</h1>
+            <div class="row">
+                <div class="content">
+                    <h2>THE WINGS TOUR</h2>
+                    <p>2021 BTS LIVE TRILOGY EPISODE</p>
+                    <h3>IN HONG KONG</h3>
+                    <p>DATE
+                        <br>
+                       28.12.2021 
+                       <br>
+                       VENUE
+                       <br>
+                       ASIAWORLD-EXPO, ARENA
+                    </p>
+                    <h4>Big Hit Entertainment</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Register section starts -->
+        <section class="register" id="register">
+            <h1 class="heading"> <span>Registration</span> Form</h1>  
+            <div class="content1">
+                <table id="reg">
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" id="name2" class="text"></td>   
+                    </tr>
+
+                    <tr>
+                        <td>Mobile No:</td>
+                        <td><input type="text" id="mobile2"></td>
+                    </tr>
+
+                    <tr>
+                       <td>Email:</td>
+                       <td><input type="text" id="email2" class="text"></td>
+                   </tr>
+
+                   <tr>
+                       <td>Password:</td>
+                       <td><input type="password" id="password2"  class="text"></td>
+                   </tr>
+
+                   <tr>
+                       <td>Confirm Password:</td>
+                       <td><input type="password" id="confirmpassword2" class="text"></td>
+                   </tr>
+        </table>
+        <div class="sub">
+            <button id="submit-btn" onclick="registration()">Register</button>
+         </div>
+               </div>
+
+        <section class="login" id="login">
+            <h1 class="heading"> <span>Log</span> In</h1>
+            <div class="log">
+                    <div class="row2">
+                
+                    <div class="form__input-group">
+                        <input type="text" class="form__input" id="email" placeholder="Email id">
+                    
+                    </div>
+                    <div class="form__input-group">
+                        <input type="password" class="form__input" id="password" placeholder="Password">
+                    <br>
+                    </div> 
+                
+                    <div class="sub2">
+                    <button id="form__button" onclick="enter()">Continue</button>
+                    </div>
+                        <p class="form__text">
+                            <a href="#register" class="form__link">Don't have an account? Create account</a>
+                        </p>
+         
+                    </div>
+            </div> 
+            </div>
+        </section>
+    </section> 
+        <script src="app.js"></script>
+</body>
+</html>
