@@ -9,7 +9,8 @@ function registration()
     user.mobile= document.getElementById("mobile2").value;
     user.pwd= document.getElementById("password2").value;
     user.cpwd = document.getElementById("confirmpassword2").value;
-        
+
+    var mobile_expression = /^[6-9]\d{9}$/    
     var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
     var letters =  /^[A-Z][a-z]|[a-zA-Z]+( [a-zA-Z]+)+$/i;
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -25,6 +26,16 @@ function registration()
         alert("Name field required only alphabet characters");
         
       }
+      else if (user.mobile == '')
+      {
+        alert("Kindly fill this field.");
+      
+      }
+        else if(!mobile_expression.test(user.mobile))
+      {
+        alert ('Enter a valid 10 digit number');
+      }
+      
       else if(user.email=='')
       {
         alert("Please enter your Email Id");
@@ -35,7 +46,7 @@ function registration()
         alert("Invalid Email");
        
       }
-       else if (user.pwd == '')
+      else if (user.pwd == '')
       {
         alert("Password required.");
       
